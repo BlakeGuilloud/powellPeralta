@@ -11,11 +11,27 @@
 
 #container{
   width: 100%;
-  background-image: url("assets/bg.jpg");
+  /*background-image: url("assets/bg.jpg");*/
   background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/bg.jpg');
 }
 
+.circle {
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: white;
+    margin: 0;
+}
 
+.circleCol  {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  align-items: flex-end;
+}
 
 /****************************************************************************
 *****************************************************************************
@@ -23,18 +39,40 @@
 *****************************************************************************
 ****************************************************************************/
 .banner {
-  width: 100%;
+  width: 80%;
   color: white;
-
 }
-
+.subscribe {
+  display: flex;
+  align-items: center;
+}
 .banner ul {
   width: 100%;
   margin: 0;
   display: flex;
   flex-direction: row-reverse;
+  height: 100px;
+}
+.banner li {
+  display: flex;
+  align-items: center;
+}
+.circleCol ul {
+  display: flex;
+  align-items: center;
 }
 
+.banner li:nth-child(6){
+  margin-right: 7%;
+}
+.subscribe li {
+  margin: 10px;
+}
+
+.banner > ul > li img {
+  width: 50px;
+  -webkit-filter: grayscale(50%);
+}
 
 
 
@@ -43,61 +81,284 @@
                               NAVIGATION
 *****************************************************************************
 ****************************************************************************/
-.nav {
-  width: 100%;
-
+nav {
+  width: 61%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav ul {
-  width: 60%;
+  width: 100%;
   font-size: .7em;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: center;
   color: white;
-
 }
 
 nav li {
   padding: 10px;
-  margin: 10px;
+  margin: 1%;
   width: 30%;
-  background-color: red;
+  background-color: #D80000;
   justify-content: center;
+  text-align: center;
+
+}
+
+nav span {
+
+}
+
+
+/****************************************************************************
+*****************************************************************************
+                              HEADER
+*****************************************************************************
+****************************************************************************/
+header {
+  width: 60%;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/top-image.png');
+
+  background-position: top;
+  background-size: 140%;
+  margin: 0 auto;
+  position: relative;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+}
+
+.peralta {
+  display: flex;
+  vertical-align: middle;
+
+  margin: 3%;
+}
+
+/*
+.logo {
+  background-image: url("assets/peralta-logo.png");
+  height: 200px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  align-items: flex-end;
+}*/
+
+
+
+/****************************************************************************
+*****************************************************************************
+                              THREE DOTS
+*****************************************************************************
+****************************************************************************/
+.threeDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.threeDots ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.threeDots li {
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
+/****************************************************************************
+*****************************************************************************
+                              CONTENT
+*****************************************************************************
+****************************************************************************/
+.mainContent {
+  display:flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  background-color: white;
+  width: 33%;
+  flex-direction: column;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+section h1 {
+  font-size: 20px;
+}
+
+section time {
+  color: gray;
+}
+
+section a {
+  color: red;
+  align-self: center;
+  
+}
+.mainContent section:nth-child(2) {
+  margin: 0 1%;
+}
+
+
+/****************************************************************************
+*****************************************************************************
+                              SKATERS
+*****************************************************************************
+****************************************************************************/
+.skaters h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.skaters {
+  width: 61%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 20em;
+  height: 500px;
+}
+.skaters ul {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.left li {
+  border-style: solid;
+  margin: 1%;
+}
+.right li {
+  margin: 1%;
+  margin-right: 0;
+}
+
+.right li {
+  border-style: solid;
+}
+
+.skaters > ul > li {
+  display: flex;
   text-align: center;
 }
 
-nav li:before {
+.right {
+  display: flex;
+  width: 30%;
+}
 
+.left {
+  width: 69%;
+}
+
+.lance {
+  background-image: url("assets/sk8er-4.png");
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.rodney {
+  background-image: url("assets/sk8er-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.tommy {
+  background-image: url("assets/sk8er-1.png");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.steve {
+  background-image: url("assets/sk8er-2.png");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 
 
-/****************************************************************************
-*****************************************************************************
-                              NAVIGATION
-*****************************************************************************
-****************************************************************************/
-
-
-
-
-
-
 
 /****************************************************************************
 *****************************************************************************
-                              NAVIGATION
+                              SKATEBOARDS
 *****************************************************************************
 ****************************************************************************/
+.skateboards {
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+}
+.skateboards ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.skateboards li {
+  width: 10%;
 
-
-
-
+}
 
 /****************************************************************************
 *****************************************************************************
-                              NAVIGATION
+                              FOOTER
 *****************************************************************************
 ****************************************************************************/
+.footer {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footer li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footerLeft {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.footerRight li {
+  border-style: solid;
+  border-color: gray;
+  width: 100%;
+  margin: 10px;
+}
+
+.footerRight {
+  width: 40%;
+  margin: 0 auto;
+}
