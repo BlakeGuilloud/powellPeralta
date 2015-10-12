@@ -23,6 +23,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/bg.jpg');
   margin: 0 auto;
   padding-bottom: 100px;
+  background-attachment: fixed;
 }
 
 .circle {
@@ -51,6 +52,7 @@ body {
   width: 80%;
   color: white;
   height: 75px;
+
 }
 .subscribe {
   display: flex;
@@ -65,6 +67,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   height: 100px;
+
 }
 .banner li {
   display: flex;
@@ -377,6 +380,7 @@ section a {
   padding: 1.5%;
 }
 
+
 /****************************************************************************
 *****************************************************************************
                               FOOTER
@@ -530,7 +534,19 @@ section a {
 ****************************************************************************/
 @media (max-width: 1200px) {
   .mainContent {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  section {
+    width: 100%;
+    margin: 10px 10px 10px 0px;;
+  }
+  .mainContent section:nth-child(3) {
+    margin: 0 10px 0 0px;
+  }
+  .banner {
+    margin-bottom: 10px;
   }
   nav ul {
     flex-direction: column;
@@ -542,6 +558,7 @@ section a {
   nav {
     width: 100%;
   }
+
   .arrow{
     display: none;
   }
