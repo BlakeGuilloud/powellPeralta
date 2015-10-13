@@ -41,12 +41,13 @@
       </div>
       <nav>
         <ul>
-          <li><span>&#8212</span>    SK8T NEWS    <span>&#8212</span></li>
-          <li><span>&#8212</span>    SKATEBOARDERS    <span>&#8212</span></li>
-          <li><span>&#8212</span>    BOARD DESIGN    <span>&#8212</span></li>
-          <li><span>&#8212</span>    CONTACT US    <span>&#8212</span></li>
+          <li id = "news"><span>&#8212</span>    SK8T NEWS    <span>&#8212</span></li>
+          <li id = "skateboarders"><span>&#8212</span>    SKATEBOARDERS    <span>&#8212</span></li>
+          <li id = "boardDesign"><span>&#8212</span>    BOARD DESIGN    <span>&#8212</span></li>
+          <li id = "contact"><span>&#8212</span>    CONTACT US    <span>&#8212</span></li>
         </ul>
       </nav>
+      <div id="headerJS">
       <header>
         <div class = "grid">
           <img src="assets/grid.png" alt="">
@@ -56,6 +57,8 @@
         </div>
 
       </header>
+      </div>
+
       <div class="threeDots">
         <ul>
           <li class = "circle" ></li>
@@ -63,7 +66,7 @@
           <li class = "circle" ></li>
         </ul>
       </div>
-
+      <div id="main">
       <div class="mainContent">
         <div class="arrow">
           <h3>ARTICLES</h3>
@@ -88,7 +91,8 @@
         </section>
 
       </div>
-
+      </div>
+      <div id="skatersJS">
       <div class="skaters">
         <div class="arrow">
           <h3>SKATEBOARDERS</h3>
@@ -108,7 +112,8 @@
           </li>
         </ul>
       </div>
-
+      </div>
+      <div id="skateboardsJS">
       <div class="skateboards">
         <div class="arrow">
           <h3>SKATEBOARDS</h3>
@@ -126,7 +131,9 @@
           <li><img src="assets/sk8-10.png" alt=""></li>
         </ul>
       </div>
+      </div>
 
+      <div id="contactJS">
       <div class="footer">
         <div class="arrow">
           <h3>CONTACT</h3>
@@ -156,10 +163,44 @@
           </li>
         </ul>
       </div>
+      </div>
 
     </div>
   </div>
+  <script>
+    $(function() {
+      $('#news').on('click', function (){
+        $('#main').slideToggle(200);
+        $('#skatersJS').hide(200);
+        $('#contactJS').hide(200);
+        $('#headerJS').hide(200);
+        $('#skateboardsJS').hide(200);
+      });
+      $('#skateboarders').on('click', function(){
+        $('#main').hide(200);
+        $('#skatersJS').slideToggle(200);
+        $('#contactJS').hide(200);
+        $('#headerJS').hide(200);
+        $('#skateboardsJS').hide(200);
+      });
+      $('#boardDesign').on('click', function(){
+        $('#main').hide(200);
+        $('#skatersJS').hide(200);
+        $('#skateboardsJS').slideToggle(200);
+        $('#contactJS').hide(200);
+        $('#headerJS').hide(200);
+      });
+      $('#contact').on('click', function(){
+        $('#main').hide(200);
+        $('#skatersJS').hide(200);
+        $('#contactJS').slideToggle(200);
+        $('#headerJS').hide(200);
+        $('#skateboardsJS').hide(200);
 
+      });
+    });
+
+  </script>
   <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 </body>
 </html>
