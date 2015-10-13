@@ -26,6 +26,15 @@ body {
   background-attachment: fixed;
 }
 
+#circle {
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: white;
+    margin: 0;
+}
 .circle {
     width: 5px;
     height: 5px;
@@ -113,7 +122,7 @@ nav {
 
 nav ul {
   width: 100%;
-  font-size: 15px;
+  font-size: .9rem;
   margin: 0 auto;
   padding: 0;
   display: flex;

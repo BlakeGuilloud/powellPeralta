@@ -1,0 +1,74 @@
+@media (max-width: 550px) {
+
+  .banner {
+    width: 100%;
+    margin: 0 auto;
+    .circleCol {
+      display: none;
+    }
+    .subscribe li{
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+
+
+  nav ul {
+    flex-direction: row;
+    position: relative;
+  }
+  nav li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+
+
+header{
+  height: 400px;
+  width: 100%;
+  .grid img {
+    height: 380px;
+  }
+  .peralta img {
+    display: none;
+  }
+}
+
+.mainContent {
+  width: 100%;
+}
+
+.skaters {
+  width: 100%;
+}
+
+.skateboards {
+  width: 100%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 20%;
+    wrap: wrap;
+  }
+}
+
+.footer {
+  width: 100%;
+  .footerLeft {
+    width: 100%;
+  }
+  .footerRight {
+    width: 100%;
+  }
+}
+}

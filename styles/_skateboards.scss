@@ -1,0 +1,37 @@
+.skateboards {
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 3%;
+  box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.12);
+}
+.skateboards ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.skateboards li {
+  width: 10%;
+  padding: 1.5%;
+  transition: 5s;
+
+}
+
+//
+// .skateboards li:hover{
+//   transform: scale(1.5);
+//   transform: rotatey(360deg) scale(1.5) rotatez(360deg);
+//   position: relative;
+// // }
+// @-webkit-keyframes skateAnimate {
+//   0% {transform: scale(1.5);}
+//   25% {position: relative; top: 50px;}
+//   50% {position: relative; top: 100px;}
+//   100% {position: relative; top: 150px;}
+// }
+//
+// .skateboards li:nth-child(1) {
+//   -webkit-animation: skateAnimate 2.5s infinite;
+// }
