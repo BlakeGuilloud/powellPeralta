@@ -2,6 +2,23 @@
   width: 80%;
   color: white;
   height: 75px;
+  ul {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  li:nth-child(6){
+    margin-right: 7%;
+  }
+  a:hover{
+    opacity: .5;
+  }
 }
 .subscribe {
   display: flex;
@@ -9,37 +26,19 @@
   font-size: 10px;
   font-weight: lighter;
   font-family: 'Quicksand';
+  li {
+    margin: 10px;
+  }
 }
-.banner ul {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 100px;
-}
-.banner li {
-  display: flex;
-  align-items: center;
-}
-.banner a:hover{
-  opacity: .5;
-}
+
 .circleCol ul {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-.circleCol li {
-  margin: 1px;
-}
-
-.banner li:nth-child(6){
-  margin-right: 7%;
-}
-.subscribe li {
-  margin: 10px;
+  li {
+    margin: 1px;
+  }
 }
 
 .banner > ul > li img {

@@ -9,27 +9,22 @@
   display: flex;
   justify-content: flex-start;
   padding-left: 1%;
-}
-
-.arrow:after {
-  border: solid transparent;
-  content: '';
-  border-width: 35px;
-	border-left-color: $peraltaRed;
-  position: absolute;
-  margin: 0 auto;
-}
-
-.arrow h3 {
-  font-size: 20px;
-  color: white;
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-
-.arrow {
   opacity: .0;
+  &:after {
+    border: solid transparent;
+    content: '';
+    border-width: 35px;
+  	border-left-color: $peraltaRed;
+    position: absolute;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
 }
 
 .footer:hover > .arrow {
@@ -38,11 +33,9 @@
 .skaters:hover > .arrow {
   opacity: 1;
 }
-
 .mainContent:hover > .arrow {
   opacity: 1;
 }
-
 .skateboards:hover > .arrow {
   opacity: 1;
 }
